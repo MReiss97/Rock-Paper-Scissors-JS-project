@@ -4,24 +4,24 @@
   }
   
   .button1 {
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 16px;
     padding: 16px 30px;
-    border: white;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
   }
   
   .button1:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
 
   .img2 {
@@ -30,25 +30,24 @@
   }
   
   .button2 {
-    font-family: 'Tilt Prism', cursive;
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 16px;
     padding: 16px 30px;
-    border: white;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
   }
   
   .button2:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
 
   .img3 {
@@ -57,25 +56,24 @@
   }
   
   .button3 {
-    font-family: 'Tilt Prism', cursive;
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 16px;
     padding: 16px 30px;
-    border: white;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
   }
   
   .button3:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
 
   .img4 {
@@ -84,27 +82,60 @@
   }
   
   .button4 {
-    font-family: 'Tilt Prism', cursive;
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 16px;
     padding: 16px 30px;
-    border: white;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
   }
   
   .button4:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
 
+  .title1{
+    font-family: 'Dosis', sans-serif;
+  }
 
+  .player1{
+    font-family: 'Dosis', sans-serif;
+  }
 
+  .computer1 {
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .scoreplayer {
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .scorecomputer {
+    font-family: 'Dosis', sans-serif;
+  }
+  
+  .result1 {
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .result2 {
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .choice1{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+  }
+
+  .restart1 {
+    font-family: 'Dosis', sans-serif;
+  }
   
