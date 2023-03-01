@@ -73,13 +73,23 @@ const determineWinner = (userChoice, computerChoice) => {
  }
 }
 
-const checkWinner = (userScore, computerScore) => {
-if (userScore === 10) {
-  alert("You won!!!!!!");
-} else (computerScore === 10) {
-  alert("The computer won!!!!!");
+const checkWinner = () => {
+  if (userScore === 10) {
+    alert("You won!!!!!!");
+  } else if(computerScore === 10) {
+    console.log(computerScore);
+    alert("The computers are taking over the world!!!!!");
   }
- }
+
+
+}
+
+ function resetGame() {
+  userScore = 0;
+  computerScore = 0;
+  document.getElementById("userScore").innerHTML = userScore;
+  document.getElementById("computerScore").innerHTML = computerScore;
+}
 
 const playGame = (choice) => {
    const userChoice = getUserChoice(choice);
