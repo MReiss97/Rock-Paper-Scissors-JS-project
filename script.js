@@ -9,15 +9,14 @@ if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' ||
  }
 }
 const getComputerChoice = () => {
-  const randomNumber = Math.floor(Math.random() * 3);
-  document.getElementById('computerScore').style.display = "";
-  switch (randomNumber) {
-    case 0:
+  const randomNumber = Math.floor(Math.random() * 3); //Randomly chooses a number from 1-3
+  document.getElementById('computerScore').style.display = ""; //Sets the computer score to 0
+  switch (randomNumber) { 
+    case 0: //If number 0 is chosen, computer chooses rock
       return 'rock';
-      //set image of comp choice to rock
-    case 1:
+    case 1: //If number 1 is chosen, computer chooses paper
       return 'paper';
-    case 2:
+    case 2: //If number 2 is chosen, computer chooses scissors
       return 'scissors';
   }
 };
@@ -34,72 +33,71 @@ const determineWinner = (userChoice, computerChoice) => {
  
  if (userChoice === 'rock') {
   if (computerChoice === 'paper') {
-    computerScore++;
-    document.getElementById('computerScore').innerHTML = computerScore;
-    return document.getElementById("result").innerHTML = "The computer won!";
+    computerScore++; //adds 1 to the computer score if computer wins
+    document.getElementById('computerScore').innerHTML = computerScore;  //Sets the computer score visually to +1
+    return document.getElementById("result").innerHTML = "The computer won!"; //This displays the result when the computer wins
    
-        //set picture of result to Comp Winner
   } else {
-    userScore++;
-    document.getElementById('playerScore').innerHTML = userScore;
-    return document.getElementById("result").innerHTML = "You won!";
+    userScore++; //adds 1 to the user score if user wins
+    document.getElementById('userScore').innerHTML = userScore; //Sets the use score visually to +1
+    return document.getElementById("result").innerHTML = "You won!"; //This displays the result when you win
     
-    //set picture of result to Human Winner
   }
  }
  if (userChoice === 'paper') {
   if (computerChoice === 'scissors') {
-    computerScore++;
-    document.getElementById('computerScore').innerHTML = computerScore;
-        return document.getElementById("result").innerHTML = "The computer won!";
+    computerScore++; //adds 1 to the computer score if computer wins
+    document.getElementById('computerScore').innerHTML = computerScore; //Sets the computer score visually to +1
+        return document.getElementById("result").innerHTML = "The computer won!"; //This displays the result when the computer wins
    
   } else {
-    userScore++;
-    document.getElementById('playerScore').innerHTML = userScore;
-    return document.getElementById("result").innerHTML = "You won!";
+    userScore++; //adds 1 to the user score if user wins
+    document.getElementById('userScore').innerHTML = userScore; //Sets the use score visually to +1
+    return document.getElementById("result").innerHTML = "You won!"; //This displays the result when you win
   }
  }
  if (userChoice === 'scissors') {
   if (computerChoice === 'rock') {
-    computerScore++;
-    document.getElementById('computerScore').innerHTML = computerScore;
-        return document.getElementById("result").innerHTML = "The computer won!";
+    computerScore++; //adds 1 to the computer score if computer wins
+    document.getElementById('computerScore').innerHTML = computerScore; //Sets the computer score visually to +1
+        return document.getElementById("result").innerHTML = "The computer won!"; //This displays the result when the computer wins
    
   } else {
-    userScore++;
-    document.getElementById('playerScore').innerHTML = userScore;
-    return document.getElementById("result").innerHTML = "You won!";
+    userScore++; //adds 1 to the user score if user wins
+    document.getElementById('userScore').innerHTML = userScore; //Sets the use score visually to +1
+    return document.getElementById("result").innerHTML = "You won!"; //This displays the result when you win
   }
  }
 }
 
 const checkWinner = () => {
   if (userScore === 10) {
-    alert("You won!!!!!!");
+    alert("You won!!!!!!"); // If the user score is equal to 10, the alert you won appears
   } else if(computerScore === 10) {
     console.log(computerScore);
-    alert("The computers are taking over the world!!!!!");
+    alert("The computers are taking over the world!!!!!"); //If the computer score is equal to 10, the alert the computers are taking over the world appears
   }
 
 
 }
 
- function resetGame() {
-  userScore = 0;
-  computerScore = 0;
-  document.getElementById("userScore").innerHTML = userScore;
-  document.getElementById("computerScore").innerHTML = computerScore;
+function resetGame ()  {
+  userScore = 0; //Sets the userScore back to zero
+  computerScore = 0; //Sets the computerScore back to zero
+  result = ""; //Sets the result to display no text
+  document.getElementById("userScore").innerHTML = userScore; //Visually sets the userScore back to zero
+  document.getElementById("computerScore").innerHTML = computerScore; //Visually sets the computerScore back to zero
+  document.getElementById("result").innerHTML = result; //Visually sets the result back to nothing
 }
 
 const playGame = (choice) => {
-   const userChoice = getUserChoice(choice);
+   const userChoice = getUserChoice(choice); 
    const computerChoice = getComputerChoice();
-   console.log('You threw: ' + userChoice);
-   console.log('The computer threw: ' + computerChoice);
-   console.log(determineWinner(userChoice, computerChoice));
-   checkWinner();
-};
-
+   console.log('You threw: ' + userChoice); //Prints userChoice in the console
+   console.log('The computer threw: ' + computerChoice); //Prints computerChoice in the console
+   console.log(determineWinner(userChoice, computerChoice)); //Prints the winner in the console
+   checkWinner(); // Calls the check winner function
+}
 
 
 
